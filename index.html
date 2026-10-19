@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>RINE02</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- 헤더 -->
+        <header>
+            <img src="images/rine.png">
+        </header>
+
+        <div class="main-container">
+            <!-- 내비게이션-->
+            <nav class="navigation">
+                <button onclick="showSection('home')">Home</button>
+                <button onclick="showSection('project')">Project</button>
+                <button onclick="showSection('personal')">Personal</button>
+                <button onclick="showSection('about')">About</button>
+            </nav>
+            <main class="main-content">
+                <!-- 홈 -->
+                <section id="home" class="section active">
+                    <img src="images/l.jpeg">
+                </section>
+
+                <!-- 프로젝트 -->
+                <section id="project" class="section">
+                    <img src="images/l.jpeg">
+                </section>
+            
+                <!-- 개인작 -->
+                <section id="personal" class="section">
+                    <div class="personal-grid">
+                        <div class="grid-item"><img src="images/personal/pw1.jpg"></div>
+                        <div class="grid-item"><img src="images/personal/pw2.jpg"></div>
+                        <div class="grid-item"><img src="images/personal/pw3.png"></div>
+                        <div class="grid-item"><img src="images/personal/sn1.jpg"></div>
+                        <div class="grid-item"><img src="images/personal/sn2.jpg"></div>
+                        <div class="grid-item"><img src="images/personal/sn3.jpg"></div>
+                        <div class="grid-item"><img src="images/personal/sn4.jpg"></div>
+                        <div class="grid-item"><img src="images/personal/sn5.jpg"></div>
+                        <div class="grid-item"><img src="images/personal/sn6.jpg"></div>
+                        <div class="grid-item"><img src="images/personal/c3_1.png"></div>
+                        <div class="grid-item"><img src="images/personal/c3_2.png"></div>
+                        <div class="grid-item"><img src="images/personal/c3_3.png"></div>
+                    </div>
+                </section>
+                <!-- 자기소개 -->
+                <section id="about" class="section">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="images/profile.png">
+                        </div>
+                        <div class="profile-name"><h2>RINE02</h2></div>
+                        <div class="profile-desc">Illustrator & Designer</div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- 라이트박스 -->
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-img" id="lightbox-img" src="">
+        </div>
+
+        <!-- 카피라이트 -->
+        <footer>
+            <p>©Copyright 2026 by RINE02. All rights reversed.</p>
+        </footer>
+    </body>
